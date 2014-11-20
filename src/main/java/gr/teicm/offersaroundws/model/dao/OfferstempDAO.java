@@ -46,4 +46,9 @@ public class OfferstempDAO {
         session.close();
         return list;
     }
+    
+    public void printOfferstempDetails(int BusinessId){
+        System.out.println("Offers: ");
+        System.out.println("ID: " + BusinessId);
+   }
 }
