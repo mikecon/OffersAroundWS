@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package gr.teicm.offersaroundws.services;
 
 import java.util.List;
@@ -12,10 +8,6 @@ import javax.jws.WebParam;
 import gr.teicm.offersaroundws.model.pojos.Offerstemp;
 import gr.teicm.offersaroundws.model.dao.OfferstempDAO;
 
-/**
- *
- * @author Public
- */
 @WebService(serviceName = "OfferstempWS")
 public class OfferstempWS {
 

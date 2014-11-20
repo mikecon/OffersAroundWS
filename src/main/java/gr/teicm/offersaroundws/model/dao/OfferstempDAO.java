@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package gr.teicm.offersaroundws.model.dao;
 
 import gr.teicm.offersaroundws.model.pojos.Offerstemp;
@@ -12,11 +8,6 @@ import org.hibernate.Transaction;
 import org.hibernate.Query;
 import java.util.List;
 
-
-/**
- *
- * @author Public
- */
 public class OfferstempDAO {
     public void insertOffer(Offerstemp o){
         SessionFactory sf=null;
