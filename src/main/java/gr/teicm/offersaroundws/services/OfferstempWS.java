@@ -28,7 +28,7 @@ public class OfferstempWS {
     @WebMethod(operationName = "SearchOffer")
     public String SearchOffer(@WebParam(name = "businessId") int businessId) {
         OfferstempDAO offerdao = new OfferstempDAO();
-        return offerdao.readOffer(businessId);
+        return offerdao.searchOffer(businessId);
     }
 
     /**

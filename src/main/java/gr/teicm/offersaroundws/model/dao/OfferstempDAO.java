@@ -26,7 +26,7 @@ public class OfferstempDAO {
         }
     }
     
-    public String readOffer(int businessId){
+    public String searchOffer(int businessId){
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
         Offerstemp o = (Offerstemp)session.get(Offerstemp.class, businessId);
@@ -41,7 +41,7 @@ public class OfferstempDAO {
     public List<Offerstemp> listOfferstemp(){
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
-        Query query = session.createQuery("from Offers");
+        Query query = session.createQuery("from Offerstemp");
         List<Offerstemp> list = query.list();
         session.close();
         return list;
