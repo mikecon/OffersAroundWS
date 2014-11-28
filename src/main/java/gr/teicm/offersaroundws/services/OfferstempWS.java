@@ -15,8 +15,8 @@ public class OfferstempWS {
      * Web service Insert Offers
      */
     @WebMethod(operationName = "InsertOffer")
-    public String InsertOffer(@WebParam(name = "businessId") int businessId, @WebParam(name = "businessName") String businessName, @WebParam(name = "latitude") float latitude, @WebParam(name = "longitude") float longitude, @WebParam(name = "offer") String offer) {
-        Offerstemp o = new Offerstemp(businessId,businessName,latitude,longitude,offer);
+    public String InsertOffer(@WebParam(name = "BusinessId") short BusinessId, @WebParam(name = "BusinessName") String BusinessName, @WebParam(name = "latitude") float latitude, @WebParam(name = "longitude") float longitude, @WebParam(name = "offer") String offer) {
+        Offerstemp o = new Offerstemp(BusinessId,BusinessName,latitude,longitude,offer);
         OfferstempDAO offerdao = new OfferstempDAO();
         offerdao.insertOffer(o);
         return "Done";
@@ -26,9 +26,9 @@ public class OfferstempWS {
      * Web service Search Offer
      */
     @WebMethod(operationName = "SearchOffer")
-    public String SearchOffer(@WebParam(name = "businessId") int businessId) {
+    public String SearchOffer(@WebParam(name = "BusinessId") short BusinessId) {
         OfferstempDAO offerdao = new OfferstempDAO();
-        return offerdao.searchOffer(businessId);
+        return offerdao.searchOffer(BusinessId);
     }
 
     /**
