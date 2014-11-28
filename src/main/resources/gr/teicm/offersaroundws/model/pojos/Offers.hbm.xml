@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 25, 2014 10:11:32 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="gr.teicm.offersaroundws.model.pojos.Offers" table="offers" catalog="offersaround" optimistic-lock="version">
+        <id name="offerId" type="java.lang.Short">
+            <column name="offer_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="stores" class="gr.teicm.offersaroundws.model.pojos.Stores" fetch="select">
+            <column name="store_id" not-null="true" />
+        </many-to-one>
+        <property name="product" type="string">
+            <column name="product" length="25" not-null="true" />
+        </property>
+        <property name="price" type="float">
+            <column name="price" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="beginDate" type="date">
+            <column name="begin_date" length="10" />
+        </property>
+        <property name="endDate" type="date">
+            <column name="end_date" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
