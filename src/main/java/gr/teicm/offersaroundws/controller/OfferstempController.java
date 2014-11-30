@@ -13,7 +13,7 @@ public class OfferstempController {
       this.view = view;
    }
     
-    public Short getBusinessId(){
+    public int getBusinessId(){
        return model.getBusinessId();
    }
   

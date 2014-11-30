@@ -6,7 +6,7 @@ package gr.teicm.offersaroundws.model.pojos;
 public class Offerstemp  implements java.io.Serializable {
 
 
-     private Short businessId;
+     private int businessId;
      private String businessName;
      private float latitude;
      private float longitude;
@@ -15,7 +15,7 @@ public class Offerstemp  implements java.io.Serializable {
     public Offerstemp() {
     }
 
-    public Offerstemp(Short businessId, String businessName, float latitude, float longitude, String offer) {
+    public Offerstemp(int businessId, String businessName, float latitude, float longitude, String offer) {
         this.businessId = businessId;
         this.businessName = businessName;
         this.latitude = latitude;
@@ -30,11 +30,11 @@ public class Offerstemp  implements java.io.Serializable {
        this.offer = offer;
     }
    
-    public Short getBusinessId() {
+    public int getBusinessId() {
         return this.businessId;
     }
     
-    public void setBusinessId(Short businessId) {
+    public void setBusinessId(int businessId) {
         this.businessId = businessId;
     }
     public String getBusinessName() {

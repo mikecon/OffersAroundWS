@@ -11,7 +11,7 @@ import java.util.Set;
 public class Stores  implements java.io.Serializable {
 
 
-     private Short storeId;
+     private int storeId;
      private String name;
      private String latitude;
      private String longitude;
@@ -48,11 +48,11 @@ public class Stores  implements java.io.Serializable {
        this.offerses = offerses;
     }
    
-    public Short getStoreId() {
+    public int getStoreId() {
         return this.storeId;
     }
     
-    public void setStoreId(Short storeId) {
+    public void setStoreId(int storeId) {
         this.storeId = storeId;
     }
     public String getName() {
