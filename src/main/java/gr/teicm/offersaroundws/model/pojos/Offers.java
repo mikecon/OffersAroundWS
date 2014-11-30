@@ -10,7 +10,7 @@ import java.util.Date;
 public class Offers  implements java.io.Serializable {
 
 
-     private Short offerId;
+     private int offerId;
      private Stores stores;
      private String product;
      private float price;
@@ -35,11 +35,11 @@ public class Offers  implements java.io.Serializable {
        this.endDate = endDate;
     }
    
-    public Short getOfferId() {
+    public int getOfferId() {
         return this.offerId;
     }
     
-    public void setOfferId(Short offerId) {
+    public void setOfferId(int offerId) {
         this.offerId = offerId;
     }
     public Stores getStores() {

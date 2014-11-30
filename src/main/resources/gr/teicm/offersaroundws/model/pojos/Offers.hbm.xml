@@ -4,7 +4,7 @@
 <!-- Generated Nov 25, 2014 10:11:32 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="gr.teicm.offersaroundws.model.pojos.Offers" table="offers" catalog="offersaround" optimistic-lock="version">
-        <id name="offerId" type="java.lang.Short">
+        <id name="offerId" type="java.lang.Integer">
             <column name="offer_id" />
             <generator class="identity" />
         </id>

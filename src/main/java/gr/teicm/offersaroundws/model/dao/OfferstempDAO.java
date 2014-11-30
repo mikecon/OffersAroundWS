@@ -26,7 +26,7 @@ public class OfferstempDAO {
         }
     }
     
-    public String searchOffer(short businessId){
+    public String searchOffer(int businessId){
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
         Offerstemp o = (Offerstemp)session.get(Offerstemp.class, businessId);
@@ -47,7 +47,7 @@ public class OfferstempDAO {
         return list;
     }
     
-    public void printOfferstempDetails(Short BusinessId, String BusinessName, float Latitude, float Longitude, String Offer){
+    public void printOfferstempDetails(int BusinessId, String BusinessName, float Latitude, float Longitude, String Offer){
         System.out.println("Offers: ");
         System.out.println("ID: " + BusinessId);
         System.out.println("Name: " + BusinessName);
@@ -59,7 +59,7 @@ public class OfferstempDAO {
 
    }
 
-    /* public void printOfferstempDetails(Short businessId, String BusinessName, float Latitude, float Longitude, String Offer) {
+    /* public void printOfferstempDetails(int businessId, String BusinessName, float Latitude, float Longitude, String Offer) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     } 
     */
