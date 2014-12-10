@@ -2,11 +2,11 @@
 package gr.teicm.offersaroundws.model.dao;
 
 import gr.teicm.offersaroundws.model.pojos.Offerstemp;
+import java.util.List;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.Query;
-import java.util.List;
 
 public class OfferstempDAO {
     public void insertOffer(Offerstemp o){
@@ -56,10 +56,4 @@ public class OfferstempDAO {
         System.out.println("Offer: " + Offer);
     }
         
-
    }
-
-    /* public void printOfferstempDetails(int businessId, String BusinessName, float Latitude, float Longitude, String Offer) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    } 
-    */
