@@ -27,28 +27,28 @@ public class OffersTest {
     /**
      * Test of getOfferId method, of class Offers.
      */
-    @Test
-    public void testGetOfferId() {
-        
-        assertNull(o1.getOfferId());
-        o1.setOfferId(1);
-        assertEquals(1, o1.getOfferId());
-    }
+//    @Test
+//    public void testGetOfferId() {
+//        
+//        assertNull(o1.getOfferId());
+//        o1.setOfferId(1);
+//        assertEquals(1, o1.getOfferId());
+//    }
 
     /**
      * Test of setOfferId method, of class Offers.
      */
-    @Test
-    public void testSetOfferId() {
-        
-        assertNull(o1.getOfferId());
-        o1.setOfferId(1);
-        assertEquals(1, o1.getOfferId());
-        
-        assertNull(o2.getOfferId());
-        o2.setOfferId(2);
-        assertEquals(2, o2.getOfferId());
-    }
+//    @Test
+//    public void testSetOfferId() {
+//        
+//        assertNull(o1.getOfferId());
+//        o1.setOfferId(1);
+//        assertEquals(1, o1.getOfferId());
+//        
+//        assertNull(o2.getOfferId());
+//        o2.setOfferId(2);
+//        assertEquals(2, o2.getOfferId());
+//    }
 
     /**
      * Test of getStores method, of class Offers.

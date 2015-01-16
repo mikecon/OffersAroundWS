@@ -27,28 +27,28 @@ public class StoresTest {
     /**
      * Test of getStoreId method, of class Stores.
      */
-    @Test
-    public void testGetStoreId() {
-        
-        assertNull(s1.getStoreId());
-        s1.setStoreId(1);
-        assertEquals(1, s1.getStoreId());
-    }
+//    @Test
+//    public void testGetStoreId() {
+//        
+//        assertNull(s1.getStoreId());
+//        s1.setStoreId(1);
+//        assertEquals(1, s1.getStoreId());
+//    }
 
     /**
      * Test of setStoreId method, of class Stores.
      */
-    @Test
-    public void testSetStoreId() {
-        
-        assertNull(s1.getStoreId());
-        s1.setStoreId(1);
-        assertEquals(1, s1.getStoreId());
-        
-        assertNull(s2.getStoreId());
-        s2.setStoreId(2);
-        assertEquals(2, s2.getStoreId());
-    }
+//    @Test
+//    public void testSetStoreId() {
+//        
+//        assertNull(s1.getStoreId());
+//        s1.setStoreId(1);
+//        assertEquals(1, s1.getStoreId());
+//        
+//        assertNull(s2.getStoreId());
+//        s2.setStoreId(2);
+//        assertEquals(2, s2.getStoreId());
+//    }
 
     /**
      * Test of getName method, of class Stores.

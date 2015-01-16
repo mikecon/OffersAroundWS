@@ -33,7 +33,7 @@ public class OfferstempController {
       return model.getOffer();		
    }
 
-    public void updateView(){				
-      view.printOfferstempDetails(model.getBusinessId(), model.getBusinessName(), model.getLatitude(), model.getLongitude(), model.getOffer());
-   }	
+//    public void updateView(){				
+//      view.printOfferstempDetails(model.getBusinessId(), model.getBusinessName(), model.getLatitude(), model.getLongitude(), model.getOffer());
+//   }	
 }

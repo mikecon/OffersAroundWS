@@ -93,14 +93,14 @@ public class OfferstempControllerTest {
     /**
      * Test of updateView method, of class OfferstempController.
      */
-    @Test
-    public void testUpdateView() {
-        model.setBusinessId(1);
-        o.updateView();
-        
-        String result = "Offers: \nID: 1\nName: testName\nLatitude: 1.0\nLongitude: 1.0\nOffer: testOffer\n";
-        assertEquals(result, outContent.toString());
-        
-    }
+//    @Test
+//    public void testUpdateView() {
+//        model.setBusinessId(1);
+//        o.updateView();
+//        
+//        String result = "Offers: \nID: 1\nName: testName\nLatitude: 1.0\nLongitude: 1.0\nOffer: testOffer\n";
+//        assertEquals(result, outContent.toString());
+//        
+//    }
     
 }

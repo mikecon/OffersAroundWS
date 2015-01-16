@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package gr.teicm.offersaroundws.model.dao;
 
 import gr.teicm.offersaroundws.model.pojos.Offerstemp;
@@ -8,7 +12,29 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+/**
+ *
+ * @author Michalis Konstantinou
+ */
 public class OfferstempDAO {
+    
+    /**
+     * 
+     * @Connect List with Database 
+     */
+    public List<Offerstemp> listOfferstemp(){
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+        Query query = session.createQuery("from Offerstemp");
+        List<Offerstemp> list = query.list();
+        session.close();
+        return list;
+    }
+    
+    /**
+     * 
+     * @Connect Insert Business and Offer with Database 
+     */
     public void insertOffer(Offerstemp o){
         SessionFactory sf=null;
         Session session=null;
@@ -26,6 +52,10 @@ public class OfferstempDAO {
         }
     }
     
+    /**
+     * 
+     * @Connect Search Business and Offer with Database 
+     */
     public String searchOffer(int businessId){
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
@@ -33,27 +63,10 @@ public class OfferstempDAO {
         session.close();
         if (o!=null){
             return "The business name is "+o.getBusinessName()+ " ,offer is "+o.getOffer()+ " ,Latitude is "+o.getLatitude()+ " and Longitude is "+o.getLongitude();
-        }else{
+        }
+        else{
             return "The business id " +businessId+ " does not exist";
         }
     }
     
-    public List<Offerstemp> listOfferstemp(){
-        SessionFactory sf = HibernateUtil.getSessionFactory();
-        Session session = sf.openSession();
-        Query query = session.createQuery("from Offerstemp");
-        List<Offerstemp> list = query.list();
-        session.close();
-        return list;
-    }
-    
-    public void printOfferstempDetails(int BusinessId, String BusinessName, float Latitude, float Longitude, String Offer){
-        System.out.println("Offers: ");
-        System.out.println("ID: " + BusinessId);
-        System.out.println("Name: " + BusinessName);
-        System.out.println("Latitude: " + Latitude);
-        System.out.println("Longitude: " + Longitude);
-        System.out.println("Offer: " + Offer);
-    }
-        
-   }
+}
